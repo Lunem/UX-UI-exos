@@ -1,0 +1,155 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../sass/screen.scss */
+body {
+  font-family: sans-serif;
+  background-color: #9988df;
+}
+/* line 12, ../sass/screen.scss */
+body .overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, rgba(214, 121, 237, 0.65), rgba(237, 128, 189, 0.4));
+}
+/* line 23, ../sass/screen.scss */
+body .card {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 30, ../sass/screen.scss */
+body .card .img-container {
+  margin: auto;
+  background-color: white;
+  background-image: url(../images/gg.jpg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 364px;
+  border-radius: 10px  10px 0 0;
+  box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+}
+/* line 46, ../sass/screen.scss */
+body .card .temp {
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 72px;
+}
+/* line 54, ../sass/screen.scss */
+body .card .iconweather {
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  z-index: 10;
+  margin: 240px auto;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+}
+/* line 70, ../sass/screen.scss */
+body .card .iconweather .fa-sun-o {
+  margin: auto;
+  color: rgba(119, 119, 119, 0.75);
+}
+/* line 76, ../sass/screen.scss */
+body .card .label {
+  position: relative;
+  margin: auto;
+  background-color: white;
+  width: 350px;
+  height: 150px;
+  border-radius: 0 0 10px  10px;
+  box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(119, 119, 119, 0.75);
+}
+/* line 86, ../sass/screen.scss */
+body .card .label .place {
+  margin: 60px 60px 0 70px;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: rgba(119, 119, 119, 0.75);
+}
+/* line 93, ../sass/screen.scss */
+body .card .label .date {
+  margin: 10px 60px 0 110px;
+  color: rgba(119, 119, 119, 0.75);
+}
